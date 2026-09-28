@@ -1,0 +1,20 @@
+/* CUSTOM PROPERTIES 
+---------------------------*/
+:root {
+  --color-green-700: hsl(124, 60%, 5%);
+  --color-green-600: hsl(182, 73%, 7%);
+  --color-green-500: hsl(171, 62%, 10%);
+  --color-green-400: hsl(170, 40%, 15%);
+  --color-green-300: hsl(167, 40%, 22%);
+  --color-green-200: hsl(143, 22%, 63%);
+  --color-green-100: hsl(131, 41%, 90%);
+  --color-black: #000000;
+}
+
+/* GLOBAL STYLES 
+---------------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
