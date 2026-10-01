@@ -389,7 +389,8 @@ footer img {
   font-size: 35px;
 }
 
-#contact-page {
+#contact-page,
+#submit-page {
   margin: 0 auto;
   text-align: center;
 }
@@ -430,6 +431,19 @@ footer img {
 #btn:hover,
 #btn:focus {
   opacity: 0.75;
+}
+
+#submit-page {
+  margin-top: 200px;
+}
+
+#submit-page p {
+  width: 20%;
+  margin: 0 auto;
+  padding: 10px 5px;
+  background-color: var(--color-green-100);
+  border: 3px solid var(--color-green-500);
+  border-radius: 30px;
 }
 
 .reference {
