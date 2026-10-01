@@ -177,6 +177,7 @@ img {
 
 #projects p {
   margin-top: 5px;
+  margin-bottom: 50px;
 }
 
 #projects a {
@@ -199,11 +200,15 @@ h3 {
   text-align: center;
 }
 
+.main-page-container p {
+  color: var(--color-green-200);
+}
+
 .projects-container {
   margin-top: 70px;
 }
 
-.projects-container a {
+.project-title a {
   color: var(--color-green-300);
   border: 5px solid var(--color-green-300);
   padding: 3px 20px;
@@ -223,11 +228,38 @@ h3 {
   padding: 10px 0;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  width: 100%;
+  /* aspect-ratio: 20 / 6; */
+  /* object-fit: cover; */
+  /* object-position: top; */
 }
 
 .projects-container img {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
+}
+
+.project-item {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-item > a:hover img,
+.project-item > a:focus img {
+  transform: translateY(-6px);
+}
+
+.project-item > a {
+  display: block;
+}
+
+.project-item img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top;
 }
 
 .skills-container img {
@@ -237,6 +269,7 @@ h3 {
 }
 
 .skills {
+  margin-top: 50px;
   text-align: center;
   padding: 60px 20px 20px;
   background-color: var(--color-green-600);
@@ -287,6 +320,10 @@ h3 {
   background-color: var(--color-green-00);
 }
 
+#contact {
+  margin-top: 50px;
+}
+
 footer {
   background-color: var(--color-green-600);
   padding: 10px 15px;
@@ -309,6 +346,88 @@ footer p {
 
 footer img {
   width: 5%;
+}
+
+#about-me {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+}
+
+#about-me a {
+  color: var(--color-green-600);
+  background-color: var(--color-green-200);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+#about-me h1 {
+  margin-top: 50px;
+}
+
+#about-me p {
+  margin: 40px 0;
+  color: var(--color-green-200);
+}
+
+.project-page {
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+#skill-page {
+  width: 65%;
+  margin: 0 auto;
+}
+
+#skill-page h2 {
+  font-size: 35px;
+}
+
+#contact-page {
+  margin: 0 auto;
+  text-align: center;
+}
+
+#contact-page h1 {
+  font-size: 40px;
+}
+
+#contact-page img {
+  width: 50px;
+}
+
+.media {
+  font-size: 18px;
+  color: var(--color-green-200);
+}
+
+#name,
+#email,
+#message {
+  padding: 15px 40px;
+  border-radius: 30px;
+  border: 5px solid var(--color-green-300);
+}
+
+#message {
+  margin-bottom: 40px;
+}
+
+.reference {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.reference a {
+  color: var(--color-green-300);
+}
+
+.reference img {
+  margin-bottom: -5px;
 }
 
 @media (min-width: 700px) {
@@ -427,5 +546,16 @@ footer img {
 
   footer img {
     width: 24px;
+  }
+
+  #contact-page img {
+    width: 70px;
+  }
+
+  #name,
+  #email,
+  #message {
+    padding: 15px 60px;
+    border-radius: 30px;
   }
 }
